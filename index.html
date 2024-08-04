@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+    />
+    <!-- Добавление библиотек для кнопки -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <style>
+      .text-element {
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+      }
+
+      .text-element.animate {
+        animation: modernChangeText 1s ease-in-out;
+      }
+
+      @keyframes modernChangeText {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cv-v2">
+      <section class="bentoflexbox">
+        <div class="frame-parent">
+          <div class="profileimg-parent">
+            <img
+              class="profileimg-icon"
+              loading="lazy"
+              alt=""
+              src="images/profileImg.png"
+            />
+
+            <div class="namebox">
+              <div class="greetingphrase text-element" contenteditable="true">Hello 👋🏻 I’m</div>
+              <div class="name-role">
+                <h2 class="name text-element" contenteditable="true">Graham Hunt</h2>
+                <h3 class="role text-element" contenteditable="true">Brand/Logo Designer</h3>
+              </div>
+            </div>
+            <div class="lenguagesbox">
+              <h2 class="nametitle text-element" contenteditable="true">Languages</h2>
+              <div class="languages">
+                <div class="language-list">
+                  <div class="english text-element" contenteditable="true">English</div>
+                  <div class="spanish text-element" contenteditable="true">Spanish</div>
+                  <div class="french text-element" contenteditable="true">French</div>
+                </div>
+                <div class="levellenguage">
+                  <div class="englishprogressbar"></div>
+                  <div class="spanishprogressbar"></div>
+                  <div class="galicianprogressbar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-column">
+            <div class="educationbox">
+              <div class="title">
+                <h2 class="nametitle text-element" contenteditable="true">Education</h2>
+              </div>
+              <div class="content">
+                <div class="column-1">
+                  <div class="lasteducation">
+                    <div class="topbar">
+                      <div class="education-date text-element" contenteditable="true">2024</div>
+                      <img
+                        class="education-icon"
+                        loading="lazy"
+                        alt=""
+                        src="images/heart.png"
+                      />
+                    </div>
+                    <div class="content1">
+                      <div class="nametitle2 text-element" contenteditable="true">UX/UI</div>
+                      <div class="tags">
+                        <div class="tag-1 text-element" contenteditable="true">#UX</div>
+                        <div class="tag-2 text-element" contenteditable="true">#UI</div>
+                        <div class="tag-3 text-element" contenteditable="true">#research</div>
+                        <div class="tag-4 text-element" contenteditable="true">#DesignSystem</div>
+                        <div class="tag-5 text-element" contenteditable="true">#Agile</div>
+                        <div class="tag-6 text-element" contenteditable="true">#wireframing</div>
+                        <div class="tag-7 text-element" contenteditable="true">#figma</div>
+                        <div class="tag-8 text-element" contenteditable="true">#IA</div>
+                      </div>
+                    </div>
+                    <div class="schoolname text-element" contenteditable="true">Neoland</div>
+                  </div>
+                  <div class="education-2">
+                    <div class="topbar1">
+                      <div class="secondary-date text-element" contenteditable="true">2017-2021</div>
+                    </div>
+                    <div class="content2">
+                      <div class="nametitle3 text-element" contenteditable="true">Graphic design</div>
+                      <div class="tags1">
+                        <div class="tag-11 text-element" contenteditable="true">#branding</div>
+                        <div class="tag-21 text-element" contenteditable="true">#web</div>
+                        <div class="tag-31 text-element" contenteditable="true">#illustration</div>
+                        <div class="tag-41 text-element" contenteditable="true">#adobe</div>
+                      </div>
+                    </div>
+                    <div class="schoolname1 text-element" contenteditable="true">Cali Institute of the Arts</div>
+                  </div>
+                </div>
+                <div class="column-2">
+                  <div class="education-1">
+                    <div class="topbar2">
+                      <div class="date1 text-element" contenteditable="true">2022</div>
+                    </div>
+                    <div class="content3">
+                      <div class="nametitle4 text-element" contenteditable="true">Product designer</div>
+                      <div class="tags2">
+                        <div class="tag-12 text-element" contenteditable="true">#research</div>
+                        <div class="tag-22 text-element" contenteditable="true">#prototype</div>
+                        <div class="tag-32 text-element" contenteditable="true">#wireframes</div>
+                      </div>
+                    </div>
+                    <div class="schoolname2 text-element" contenteditable="true">Coursera</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="extrabox">
+              <div class="interestsbox">
+                <div class="title1">
+                  <h2 class="nametitle5 text-element" contenteditable="true">Interests</h2>
+                </div>
+                <div class="content4">
+                  <div class="tag-13 text-element" contenteditable="true">
+                    <div class="name1">branding</div>
+                  </div>
+                  <div class="tag-14 text-element" contenteditable="true">
+                    <div class="name2">brand identity</div>
+                  </div>
+                  <div class="tag-15 text-element" contenteditable="true">
+                    <div class="name3">logo</div>
+                  </div>
+                  <div class="tag-16 text-element" contenteditable="true">
+                    <div class="name4">typography</div>
+                  </div>
+                  <div class="tag-17 text-element" contenteditable="true">
+                    <div class="name5">photography</div>
+                  </div>
+                  <div class="tag-18 text-element" contenteditable="true">
+                    <div class="name6">designing</div>
+                  </div>
+                  <div class="tag-19 text-element" contenteditable="true">
+                    <div class="name7">poster design</div>
+                  </div>
+                  <div class="tag-110 text-element" contenteditable="true">
+                    <div class="name8">research</div>
+                  </div>
+                  <div class="tag-111 text-element" contenteditable="true">
+                    <div class="name9">social networks</div>
+                  </div>
+                  <div class="tag-112 text-element" contenteditable="true">
+                    <div class="name10">illustration</div>
+                  </div>
+                </div>
+              </div>
+              <div class="contact">
+                <div class="title2">
+                  <h2 class="nametitle6 text-element" contenteditable="true">
+                    Let´s chat! I´m ready to work on excinting projects
+                  </h2>
+                </div>
+                <div class="title3">
+                  <div class="nametitle7 text-element" contenteditable="true">ivann19bj@gmail.com</div>
+                  <div class="nametitle8 text-element" contenteditable="true">|</div>
+                  <div class="nametitle9 text-element" contenteditable="true">+34 666 666 666</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-container">
+          <div class="toolsbox">
+            <h2 class="tools text-element" contenteditable="true">Tools</h2>
+            <div class="tools-content">
+              <div class="tools-grid">
+                <div class="content5">
+                  <img
+                    class="logofigma-icon"
+                    alt=""
+                    src="images/logoFigma.png"
+                  />
+
+                  <img
+                    class="logocreativecloud-icon"
+                    alt=""
+                    src="images/logoCreativeCloud.png"
+                  />
+
+                  <img
+                    class="logomiro-1-icon"
+                    alt=""
+                    src="images/logoMiro 1.png"
+                  />
+
+                  <img
+                    class="logonotion-icon"
+                    alt=""
+                    src="images/logoNotion.png"
+                  />
+
+                  <img
+                    class="logomeet-icon"
+                    alt=""
+                    src="images/logoMeet.png"
+                  />
+
+                  <img
+                    class="logoanalytics-icon"
+                    alt=""
+                    src="images/logoanalytics.png"
+                  />
+
+                  <div class="tag text-element" contenteditable="true">
+                    <div class="design">design</div>
+                  </div>
+                </div>
+                <div class="content6">
+                  <img
+                    class="logozaper-1-icon"
+                    alt=""
+                    src="images/logoZapìer 1.png"
+                  />
+
+                  <img
+                    class="logowebflow-icon"
+                    alt=""
+                    src="images/logoWebflow.png"
+                  />
+
+                  <img
+                    class="antiageing-combo-icon"
+                    alt=""
+                    src="images/logoFramer.png"
+                  />
+
+                  <img
+                    class="logowordpress-icon"
+                    alt=""
+                    src="images/logoWordpress.png"
+                  />
+                </div>
+                <div class="tag1 text-element" contenteditable="true">
+                  <div class="no-code">no-code</div>
+                </div>
+                <div class="content7">
+                  <img
+                    class="logochatgpt-1-icon"
+                    alt=""
+                    src="images/logoChatGPT 1.png"
+                  />
+
+                  <img
+                    class="logocopilot-1-icon"
+                    alt=""
+                    src="images/logoCopilot 1.png"
+                  />
+
+                  <img
+                    class="logomidjourney-1-icon"
+                    alt=""
+                    src="images/logoMidjourney 1.png"
+                  />
+
+                  
+                </div>
+                <div class="tag2 text-element" contenteditable="true">
+                  <div class="artoficial-intelligence">
+                    artificial intelligence
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="experiencebox">
+            <div class="title4">
+              <h2 class="nametiitle text-element" contenteditable="true">Experience</h2>
+            </div>
+            <div class="joblist">
+              <div class="lastjob">
+                <div class="topbar3">
+                  <div class="date1 text-element" contenteditable="true">Jul. 2023 - Ago. 2023</div>
+                  <div class="tag3 text-element" contenteditable="true">
+                    <div class="most-recent">most recent</div>
+                  </div>
+                </div>
+                <div class="content8">
+                  <div class="jobinfo">
+                    <div class="rolename text-element" contenteditable="true">Senior Graphic Designer</div>
+                    <div class="aboutjob">
+                      <div class="companyname text-element" contenteditable="true">Pinnacle</div>
+                      <div class="div text-element" contenteditable="true">|</div>
+                      <div class="info text-element" contenteditable="true">Full-time</div>
+                    </div>
+                  </div>
+                  <div class="featuredpoints">
+                    <div class="points">
+                      <ul class="research-and-brainstorm-variou">
+                        <li class="research-and-brainstorm text-element" contenteditable="true">
+                          Research and brainstorm various design ideas for
+                          content and marketing.
+                        </li>
+                        <li class="text-element" contenteditable="true">
+                          Review the work submitted by Junior Designers and
+                          sharing feedback.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job-2">
+                <div class="topbar4">
+                  <div class="date2 text-element" contenteditable="true">Ene. 2021 - Jul. 2023</div>
+                </div>
+                <div class="content9">
+                  <div class="jobinfo1">
+                    <div class="rolename1 text-element" contenteditable="true">Graphic / Web designer</div>
+                    <div class="aboutjob1">
+                      <div class="companyname1 text-element" contenteditable="true">Double Square</div>
+                      <div class="company-location text-element" contenteditable="true">|</div>
+                      <div class="info1 text-element" contenteditable="true">Full-time</div>
+                    </div>
+                  </div>
+                  <div class="featuredpoints1">
+                    <div class="points1">
+                      <ul class="development-of-internal-projec">
+                        <li class="development-of-internal text-element" contenteditable="true">
+                          Development of internal projects from scratch, product
+                          design of brands.
+                        </li>
+                        <li class="landing-page-webapps text-element" contenteditable="true">
+                          Landing page, webapps and hybrid apps
+                        </li>
+                        <li class="text-element" contenteditable="true">
+                          Taking decisions with stakeholders for the future of
+                          products such as Beagle labs, myur...
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job-3">
+                <div class="topbar5">
+                  <div class="date3 text-element" contenteditable="true">Feb. 2021 - Jul. 2023</div>
+                </div>
+                <div class="content10">
+                  <div class="jobinfo2">
+                    <div class="rolename2 text-element" contenteditable="true">Graphic Designer</div>
+                    <div class="aboutjob2">
+                      <div class="companyname2 text-element" contenteditable="true">Freelance</div>
+                    </div>
+                  </div>
+                  <div class="featuredpoints2">
+                    <div class="points2">
+                      <ul class="visual-design-for-events-bran">
+                        <li class="visual-design-for text-element" contenteditable="true">
+                          Visual design for Events, Brands and Products.
+                        </li>
+                        <li class="product-design-packaging text-element" contenteditable="true">
+                          Product design, Packaging Design
+                        </li>
+                        <li class="text-element" contenteditable="true">Logo Design</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <button id="download-pdf">Download resume</button>
+    <script src="script.js"></script> 
+     
+    
+    
+  </body>
+</html>
